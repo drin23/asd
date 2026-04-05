@@ -1,0 +1,117 @@
+{
+  "company": "Otto.de",
+  "language": "de",
+  "greeting": "Vielen Dank für Ihren Anruf bei Otto. Mein Name ist Lena, wie kann ich Ihnen helfen?",
+  "farewell": "Vielen Dank für Ihren Anruf bei Otto. Ich wünsche Ihnen noch einen schönen Tag!",
+  "categories": {
+    "bestellstatus": {
+      "title": "Bestellstatus & Lieferung",
+      "entries": [
+        {
+          "question": "Wo ist meine Bestellung?",
+          "answer": "Sie können den Status Ihrer Bestellung jederzeit in Ihrem Otto-Kundenkonto unter 'Meine Bestellungen' einsehen. Dort finden Sie auch die Sendungsverfolgungsnummer. Die Lieferzeit beträgt in der Regel 2-4 Werktage."
+        },
+        {
+          "question": "Wie lange dauert die Lieferung?",
+          "answer": "Die Standard-Lieferzeit beträgt 2-4 Werktage. Bei Speditionsware kann die Lieferung 5-10 Werktage dauern. Express-Lieferung ist für viele Artikel innerhalb von 1-2 Werktagen möglich."
+        },
+        {
+          "question": "Kann ich meine Lieferadresse ändern?",
+          "answer": "Solange Ihre Bestellung noch nicht versendet wurde, können Sie die Lieferadresse in Ihrem Kundenkonto ändern. Nach dem Versand ist eine Änderung leider nicht mehr möglich."
+        },
+        {
+          "question": "Mein Paket ist beschädigt angekommen.",
+          "answer": "Das tut uns sehr leid. Bitte dokumentieren Sie den Schaden mit Fotos und kontaktieren Sie uns. Wir senden Ihnen umgehend einen Ersatzartikel oder erstatten den Kaufpreis."
+        }
+      ]
+    },
+    "retoure": {
+      "title": "Rücksendung & Umtausch",
+      "entries": [
+        {
+          "question": "Wie kann ich einen Artikel zurücksenden?",
+          "answer": "Sie haben 30 Tage Zeit, Artikel an Otto zurückzusenden. Gehen Sie dazu in Ihr Kundenkonto unter 'Meine Bestellungen', wählen Sie den Artikel aus und klicken Sie auf 'Retoure anmelden'. Sie erhalten dann ein kostenloses Retourenlabel."
+        },
+        {
+          "question": "Ist die Rücksendung kostenlos?",
+          "answer": "Ja, die Rücksendung ist bei Otto immer kostenlos. Sie erhalten ein vorfrankiertes Retourenlabel, das Sie auf das Paket kleben können."
+        },
+        {
+          "question": "Wann erhalte ich meine Rückerstattung?",
+          "answer": "Nach Eingang Ihrer Retoure in unserem Lager wird die Rückerstattung innerhalb von 5-7 Werktagen auf Ihr ursprüngliches Zahlungsmittel zurückgebucht."
+        },
+        {
+          "question": "Kann ich einen Artikel umtauschen?",
+          "answer": "Einen direkten Umtausch bieten wir leider nicht an. Bitte senden Sie den Artikel zurück und bestellen Sie die gewünschte Größe oder Farbe neu."
+        }
+      ]
+    },
+    "zahlung": {
+      "title": "Zahlung & Rechnung",
+      "entries": [
+        {
+          "question": "Welche Zahlungsmethoden akzeptiert Otto?",
+          "answer": "Otto akzeptiert Kauf auf Rechnung, Ratenzahlung, Kreditkarte (Visa, Mastercard), PayPal, Klarna, sowie Lastschrift. Kauf auf Rechnung ist die beliebteste Zahlungsart bei Otto."
+        },
+        {
+          "question": "Wo finde ich meine Rechnung?",
+          "answer": "Ihre Rechnung finden Sie in Ihrem Kundenkonto unter 'Meine Bestellungen'. Dort können Sie die Rechnung als PDF herunterladen."
+        },
+        {
+          "question": "Kann ich in Raten zahlen?",
+          "answer": "Ja, Otto bietet flexible Ratenzahlung ab einem Bestellwert von 15 Euro an. Sie können zwischen 3, 6, 12 oder 24 Monatsraten wählen. Die Ratenzahlung können Sie direkt im Bestellprozess auswählen."
+        },
+        {
+          "question": "Meine Zahlung wurde doppelt abgebucht.",
+          "answer": "Das tut uns leid. Bitte kontaktieren Sie unsere Buchhaltung. Wir prüfen den Vorgang und erstatten den doppelt abgebuchten Betrag umgehend."
+        }
+      ]
+    },
+    "kundenkonto": {
+      "title": "Kundenkonto & Registrierung",
+      "entries": [
+        {
+          "question": "Wie erstelle ich ein Kundenkonto?",
+          "answer": "Besuchen Sie otto.de und klicken Sie oben rechts auf 'Anmelden'. Dort können Sie sich mit Ihrer E-Mail-Adresse registrieren. Sie benötigen nur Ihren Namen, E-Mail-Adresse und ein Passwort."
+        },
+        {
+          "question": "Ich habe mein Passwort vergessen.",
+          "answer": "Kein Problem! Klicken Sie auf der Anmeldeseite auf 'Passwort vergessen'. Sie erhalten dann eine E-Mail mit einem Link zum Zurücksetzen Ihres Passworts."
+        },
+        {
+          "question": "Wie kann ich mein Konto löschen?",
+          "answer": "Sie können Ihr Konto in den Kontoeinstellungen unter 'Konto löschen' deaktivieren. Bitte beachten Sie, dass offene Bestellungen erst abgeschlossen sein müssen."
+        }
+      ]
+    },
+    "produkte": {
+      "title": "Produkte & Sortiment",
+      "entries": [
+        {
+          "question": "Welche Produkte bietet Otto an?",
+          "answer": "Otto bietet ein breites Sortiment mit über 3 Millionen Artikeln an: Mode für Damen, Herren und Kinder, Schuhe, Möbel, Elektronik, Sport, Haushalt, und vieles mehr."
+        },
+        {
+          "question": "Gibt es aktuelle Angebote oder Sales?",
+          "answer": "Ja, Otto hat regelmäßig Aktionen und Angebote. Schauen Sie auf otto.de unter 'Sale' für aktuelle Rabatte. Newsletter-Abonnenten erhalten zusätzlich exklusive Angebote."
+        },
+        {
+          "question": "Ist ein Artikel wieder verfügbar?",
+          "answer": "Auf der Produktseite können Sie sich für eine Benachrichtigung registrieren, wenn der Artikel wieder auf Lager ist. Klicken Sie dazu auf 'Benachrichtigen, wenn verfügbar'."
+        }
+      ]
+    }
+  },
+  "escalation_triggers": [
+    "Beschwerde",
+    "Anwalt",
+    "Rechtsanwalt",
+    "Verbraucherschutz",
+    "Manager",
+    "Vorgesetzter",
+    "unzufrieden",
+    "Schadensersatz",
+    "Klage"
+  ],
+  "escalation_message": "Ich verstehe Ihre Situation und nehme Ihr Anliegen sehr ernst. Ich verbinde Sie jetzt mit einem spezialisierten Mitarbeiter, der Ihnen besser weiterhelfen kann. Einen Moment bitte."
+}

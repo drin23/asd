@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KI-gestützter Kundenservice-Agent für deutschsprachige Call Center">
+    <title>Call Center AI Agent — Deutsch</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎧</text></svg>">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="logo">🎧</div>
+                <div class="header-title">
+                    <h1>Call Center AI Agent</h1>
+                    <p>Deutsch — Powered by Gemini 3.1 Flash Live</p>
+                </div>
+            </div>
+            <div class="status-badge disconnected" id="statusBadge">
+                <span class="status-dot"></span>
+                <span id="statusText">Getrennt</span>
+            </div>
+        </header>
+
+        <!-- Company Selector -->
+        <div class="company-selector">
+            <label for="companySelect">🏢 Unternehmen:</label>
+            <select id="companySelect">
+                <option value="">Wird geladen...</option>
+            </select>
+        </div>
+
+        <!-- Call Info -->
+        <div class="call-info">
+            <span class="call-timer" id="callTimer">00:00</span>
+            <div class="visualizer" id="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <!-- Transcript -->
+        <div class="transcript-area" id="transcriptArea">
+            <div class="transcript-empty" id="transcriptEmpty">
+                <div class="icon">🎙️</div>
+                <p>Wählen Sie ein Unternehmen und klicken Sie auf<br>das Mikrofon, um ein Gespräch zu starten.</p>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn-end" id="btnEnd" disabled>
+                <span>📞</span> Auflegen
+            </button>
+            <button class="btn-mic" id="btnMic" title="Mikrofon starten">
+                🎙️
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
