@@ -113,6 +113,9 @@ async def websocket_call(websocket: WebSocket, company_id: str):
         realtime_input_config=types.RealtimeInputConfig(
             turn_coverage="TURN_INCLUDES_ONLY_ACTIVITY",
         ),
+        history_config=types.HistoryConfig(
+            initialHistoryInClientContent=True,
+        ),
         tools=tools,
     )
 
@@ -125,12 +128,8 @@ async def websocket_call(websocket: WebSocket, company_id: str):
             await websocket.send_json({"type": "status", "message": "connected"})
 
             # Trigger the AI to greet the customer immediately
-            await session.send_client_content(
-                turns=[types.Content(
-                    role="user",
-                    parts=[types.Part(text="Der Kunde hat gerade angerufen. Begrüße ihn.")]
-                )],
-                turn_complete=True
+            await session.send_realtime_input(
+                text="Der Kunde hat gerade angerufen. Begrüße ihn."
             )
             logger.info("Sent initial greeting trigger to Gemini")
 
