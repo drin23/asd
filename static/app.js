@@ -126,16 +126,8 @@ async function startCall() {
     }
 
     try {
-        // Request microphone access
-        state.mediaStream = await navigator.mediaDevices.getUserMedia({
-            audio: {
-                sampleRate: 16000,
-                channelCount: 1,
-                echoCancellation: true,
-                noiseSuppression: true,
-                autoGainControl: true,
-            }
-        });
+        // Request microphone access (with Safari/legacy fallback)
+        state.mediaStream = await requestMicrophoneStream();
 
         // Create AudioContext at 16kHz for capture
         state.audioContext = new AudioContext({ sampleRate: 16000 });
@@ -212,6 +204,40 @@ async function startCall() {
         alert('Mikrofon-Zugriff fehlgeschlagen: ' + err.message);
         endCall();
     }
+}
+
+async function requestMicrophoneStream() {
+    const constraints = {
+        audio: {
+            sampleRate: 16000,
+            channelCount: 1,
+            echoCancellation: true,
+            noiseSuppression: true,
+            autoGainControl: true,
+        }
+    };
+
+    if (navigator.mediaDevices && typeof navigator.mediaDevices.getUserMedia === 'function') {
+        return navigator.mediaDevices.getUserMedia(constraints);
+    }
+
+    // Older Safari/WebKit exposes getUserMedia directly on navigator.
+    const legacyGetUserMedia =
+        navigator.getUserMedia ||
+        navigator.webkitGetUserMedia ||
+        navigator.mozGetUserMedia ||
+        navigator.msGetUserMedia;
+
+    if (typeof legacyGetUserMedia === 'function') {
+        return new Promise((resolve, reject) => {
+            legacyGetUserMedia.call(navigator, constraints, resolve, reject);
+        });
+    }
+
+    const secureContextHint = window.isSecureContext
+        ? ''
+        : ' Öffnen Sie die Seite über https:// oder localhost.';
+    throw new Error('Dieser Browser unterstützt keinen Mikrofonzugriff.' + secureContextHint);
 }
 
 // ============================================================
